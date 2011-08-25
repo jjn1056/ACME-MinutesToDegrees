@@ -1,5 +1,8 @@
 package ACME::MinutesToDegrees;
 
+use 5.008008;
+our $VERSION = '0.01';
+
 use Moo;
 use DateTime::Format::Natural;
 

@@ -1,0 +1,43 @@
+# NAME
+
+MinutesToDegrees - Find degree difference between hour and minute hands for any time
+
+# SYNOPSIS
+
+    ## As a module
+    my $mtd = ACME::MinutesToDegrees->new;
+    say $mtd->from_time_string("3:30"); ## expect '90'
+
+    ## From the commandline
+    lib/ACME/MinutesToDegrees.pm --when 3:30
+
+# OPTIONS
+
+- --help
+
+Print a brief help message and exits.
+
+- --when
+
+Given a string that is like a date / time, try to figure out that time and then
+return the number of degrees difference between the hour and minute hands using
+relative (shortest distance between the two) measurements.
+
+# DESCRIPTION
+
+This is an example module intended as a technology demo
+
+# AUTHOR
+
+John Napiorkowski L<email:jjnapiork@cpan.org>
+
+# SEE ALSO
+
+[Modern::Perl](http://search.cpan.org/perldoc?Modern::Perl), [DateTime::Format::Natural](http://search.cpan.org/perldoc?DateTime::Format::Natural), [Getopt::Long](http://search.cpan.org/perldoc?Getopt::Long), [Pod::Usage](http://search.cpan.org/perldoc?Pod::Usage)
+
+# COPYRIGHT & LICENSE
+
+Copyright 2011, John Napiorkowski L<email:jjnapiork@cpan.org>
+
+This library is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
